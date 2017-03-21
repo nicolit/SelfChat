@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+  >
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        />
+    
+    <RelativeLayout
+        android:id="@+id/form"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+
+        <EditText
+            android:id="@+id/chat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/btn"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:textColor="@android:color/holo_purple"
+            />
+
+
+        <Button
+            android:id="@+id/btn"
+            style="@android:style/Widget.DeviceDefault.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/chat_text"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_blue_light"
+            android:cursorVisible="true"
+            android:text="Send"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="@android:color/holo_orange_dark"
+            android:textColorLink="@android:color/holo_orange_light"
+            android:textStyle="bold"
+            android:visibility="visible" />
+        
+        
+       </RelativeLayout>
+        
+        
+  </RelativeLayout>
